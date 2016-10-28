@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<projection> <type name="State"/> </projection>
+
+<defaultnode/>
+
+<defaultedge visible="no" attribute="yes"/>
+
+<node>
+   <type name="AnonSession"/>
+   <type name="Data"/>
+   <type name="Int"/>
+   <type name="JerryCredential"/>
+   <type name="JerryId"/>
+   <type name="JerryName"/>
+   <type name="JerryProfile"/>
+   <type name="JerrySession"/>
+   <type name="NoCredential"/>
+   <type name="NoData"/>
+   <type name="NoId"/>
+   <type name="NoName"/>
+   <type name="NoProfile"/>
+   <type name="State"/>
+   <type name="String"/>
+   <type name="TomCredential"/>
+   <type name="TomId"/>
+   <type name="TomName"/>
+   <type name="TomProfile"/>
+   <type name="TomSession"/>
+   <type name="univ"/>
+   <type name="ordering/Ord"/>
+   <type name="seq/Int"/>
+   <set name="First" type="ordering/Ord"/>
+   <set name="Next" type="ordering/Ord"/>
+</node>
+
+<node color="Blue">
+   <type name="Tom"/>
+</node>
+
+<node color="Gray">
+   <type name="Anon"/>
+</node>
+
+<node color="Red">
+   <type name="Jerry"/>
+</node>
+
+<node shape="House">
+   <type name="User"/>
+</node>
+
+<node showinattr="no">
+   <set name="s_checked" type="Data"/>
+   <set name="s_edit" type="Data"/>
+   <set name="s_grant" type="Data"/>
+   <set name="s_reloaded" type="Data"/>
+   <set name="s_showDB" type="Data"/>
+   <set name="s_showSD" type="Data"/>
+   <set name="s_writeDB" type="Data"/>
+   <set name="s_writeSD" type="Data"/>
+</node>
+
+<node visible="no">
+   <type name="Credential"/>
+   <type name="Id"/>
+   <type name="Name"/>
+   <type name="Profile"/>
+   <type name="Session"/>
+</node>
+
+</view>
+
+</alloy>

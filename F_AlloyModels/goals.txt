@@ -1,0 +1,87 @@
+// Stored Cross Site Scripting
+assert StoredXSS {
+	no s : State | some d : Data-NoData | some s' : State| some x,y : User{
+	d in s.s_writeDB &&
+	s.s_grant = x.session &&
+	d in s'.s_showDB&& 
+	s'.s_grant = y.session &&
+	x != y &&
+	lt[s, s']
+	}
+}
+
+//File Inclusion
+assert FileInclusion {
+	no s : State | some d : Data-NoData | some x : User{
+	s.s_grant = x.session &&
+	d in s.s_pageInclusions &&
+	}
+}
+
+
+//File Upload without check phase 
+assert FileUpload {
+	no s : State | some d : Data-NoData | some x : User{
+	s.s_grant = x.session &&
+	d in s.s_writeFS &&
+	}
+}
+//File Upload with check phase 
+assert StoredXSS {
+	no s : State | some d : Data-NoData | some s' : State| some x : User{
+	s.s_grant = x.session &&
+	d in s.s_writeFS &&
+	s'.s_grant = x.session &&
+	d in s'.s_showFS &&
+	lt[s, s']
+	}
+}
+
+//Cross Site Scripting
+assert XSS {
+	no s : State | some d : Data-NoData | some x : User{
+	s.s_grant = x.session &&
+	d in s.s_echo &&
+	// Text in c1.dataTypes 
+	}
+}
+
+//SQL-Injection
+assert SQLInj {
+	no s : State | some d : Data-NoData | some s' : State| some x : User{
+	s.s_grant = x.session &&
+	d in s.s_writeDB &&
+	s'.s_grant = x.session &&
+	d in s'.s_showDB &&
+	lt[s, s']
+	// Id in c1.dataTypes &&
+	}
+}
+
+//Bypass Login (SQL-Injection or PwdBruteForce)
+assert BypassLogin {
+	no s : State | some d : Data-NoData | some x : User{
+	s.s_grant = x.session &&
+	s.s_checked = x.credential &&
+	x.credential not in noAttack
+	}
+}
+
+//Command Execution
+assert CommandExec {
+	no s : State | some d : Data-NoData | some x : User{
+	s.s_grant = x.session &&
+	d in s.s_exec  
+	}
+}
+
+//Change Password
+assert ChangePwd {
+	no s : State | some x : User{
+	s.s_grant = x.session &&
+	s.s_checked = x.Password1 &&
+	s.s_writeDB = x.Password2 &&
+	
+	x.credential not in noAttack
+	}
+}

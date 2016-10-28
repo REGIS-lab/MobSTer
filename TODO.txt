@@ -1,0 +1,9 @@
+
+Extract info from CE 
+	componentFramework.py
+		check missing model 
+	
+	extractCEs.py
+		add checks for the missing lines in the txt file
+
+check sulla mancanza di connettività o del not found code
