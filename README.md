@@ -20,6 +20,7 @@ Dependencies
 MobSTer is a python tool that requires the following packages:
 python2.7
 TODO: test python3
+
     # pip install httplib2
     # pip install lxml
     # pip install requests
