@@ -9,7 +9,7 @@
                                                                       
                                                                       
                                                                       
-Model-based Security Testing Framework is a framework for model-based testing
+Model-based Security Testing Framework (MobSTer) is a framework for model-based testing
 the security of web application. MobSTer implements formal approaches in order
 to test the security of web applications by helping the security analyst not
 missing important security checks.
