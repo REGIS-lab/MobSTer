@@ -24,9 +24,14 @@ TODO: test python3
     # pip install lxml
     # pip install requests
 
-Morover MobSTer is shipped with the Alloy Analizer which requires Java in
+MobSTer is shipped with the Alloy Analizer which requires Java in
 order to be executed.
 
+
+
+Examples
+========================
+TODO: add examples
 
 
 How does MobSTer work?
@@ -88,9 +93,5 @@ creation of a suite of test cases (6) that are run on the web application (7).
 Further details about MobSTer and it's implementation can be found ![here](http://paper.link).
 TODO: update link to paper
 
-
-Examples
-========================
-TODO: add examples
 
 
