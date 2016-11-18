@@ -20,9 +20,9 @@ Dependencies
 MobSTer is a python tool that requires the following packages:
 python2.7
 TODO: test python3
-# pip install httplib2
-# pip install lxml
-# pip install requests
+    # pip install httplib2
+    # pip install lxml
+    # pip install requests
 
 Morover MobSTer is shipped with the Alloy Analizer which requires Java in
 order to be executed.
@@ -86,6 +86,7 @@ the counterexample(s), the actions and the HTTP requests are combined in the
 creation of a suite of test cases (6) that are run on the web application (7).
 
 Further details about MobSTer and it's implementation can be found ![here](http://paper.link).
+TODO: update link to paper
 
 
 Examples
