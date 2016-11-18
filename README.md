@@ -88,4 +88,5 @@ the counterexample(s), the actions and the HTTP requests are combined in the
 creation of a suite of test cases (6) that are run on the web application (7).
 
 Further details about MobSTer and it's implementation can be found ![here](http://paper.link).
-   TODO: update link to paper
+    
+    TODO: update link to paper
