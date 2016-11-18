@@ -1,11 +1,11 @@
- /$$      /$$           /$$        /$$$$$$  /$$$$$$$$                 
-| $$$    /$$$          | $$       /$$__  $$|__  $$__/                 
-| $$$$  /$$$$  /$$$$$$ | $$$$$$$ | $$  \__/   | $$  /$$$$$$   /$$$$$$ 
-| $$ $$/$$ $$ /$$__  $$| $$__  $$|  $$$$$$    | $$ /$$__  $$ /$$__  $$
-| $$  $$$| $$| $$  \ $$| $$  \ $$ \____  $$   | $$| $$$$$$$$| $$  \__/
-| $$\  $ | $$| $$  | $$| $$  | $$ /$$  \ $$   | $$| $$_____/| $$      
-| $$ \/  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$/   | $$|  $$$$$$$| $$      
-|__/     |__/ \______/ |_______/  \______/    |__/ \_______/|__/      
+     /$$      /$$           /$$        /$$$$$$  /$$$$$$$$                 
+    | $$$    /$$$          | $$       /$$__  $$|__  $$__/                 
+    | $$$$  /$$$$  /$$$$$$ | $$$$$$$ | $$  \__/   | $$  /$$$$$$   /$$$$$$ 
+    | $$ $$/$$ $$ /$$__  $$| $$__  $$|  $$$$$$    | $$ /$$__  $$ /$$__  $$
+    | $$  $$$| $$| $$  \ $$| $$  \ $$ \____  $$   | $$| $$$$$$$$| $$  \__/
+    | $$\  $ | $$| $$  | $$| $$  | $$ /$$  \ $$   | $$| $$_____/| $$      
+    | $$ \/  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$/   | $$|  $$$$$$$| $$      
+    |__/     |__/ \______/ |_______/  \______/    |__/ \_______/|__/      
                                                                       
                                                                       
                                                                       
@@ -32,7 +32,7 @@ order to be executed.
 How does MobSTer work?
 ========================
 
-![MobSTer framework](http://image "MobSTer, a framework for model-based testing
+![MobSTer framework](https://bitbucket.org/caioM/mobster/raw/master/framework.png  "MobSTer, a framework for model-based testing
 of web applications (the arrows refer to interaction between elements or data
 passed between them, the numbers are used in the text for the explanation of
 the different phases).")
@@ -52,7 +52,7 @@ includes a subset of the defined actions (identified with respect to the web
 application), the relation between them, and a specification of the security
 goal to be tested.
 
-The model is then passed to a model checker ( ). Our framework is general and
+The model is then passed to a model checker (3). Our framework is general and
 thus it is not bound to a specific model-checking tool; for concreteness, in
 our implementation of MobSTer, we employ the [Alloy Analizer](http://alloy.mit.edu/alloy/),
 which takes a model and its security goal, checks the goal in the model and
