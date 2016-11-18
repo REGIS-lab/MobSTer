@@ -31,16 +31,13 @@ order to be executed.
 
 Examples
 ========================
-TODO: add examples
+    TODO: add examples
 
 
 How does MobSTer work?
 ========================
 
-![MobSTer framework](https://bitbucket.org/caioM/mobster/raw/master/framework.png  "MobSTer, a framework for model-based testing
-of web applications (the arrows refer to interaction between elements or data
-passed between them, the numbers are used in the text for the explanation of
-the different phases).")
+![MobSTer framework](https://bitbucket.org/caioM/mobster/raw/master/framework.png)
 
 The first thing that a security analyst has to do when using our framework is
 to define a formal model of the web application to test. This is done by
@@ -91,7 +88,7 @@ the counterexample(s), the actions and the HTTP requests are combined in the
 creation of a suite of test cases (6) that are run on the web application (7).
 
 Further details about MobSTer and it's implementation can be found ![here](http://paper.link).
-TODO: update link to paper
+    TODO: update link to paper
 
 
 
