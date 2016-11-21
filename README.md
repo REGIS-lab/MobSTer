@@ -17,13 +17,11 @@ missing important security checks.
 
 Dependencies
 ========================
-MobSTer is a python tool that requires the following packages:
-python2.7
-TODO: test python3
-
-    # pip install httplib2
-    # pip install lxml
-    # pip install requests
+MobSTer is a Python tool that requires the following:
+    python2.7
+    httplib2
+    lxml
+    requests
 
 MobSTer is shipped with the Alloy Analizer which requires Java in
 order to be executed.
@@ -32,7 +30,12 @@ order to be executed.
 
 Examples
 ========================
-    TODO: add examples
+When execurting MobSTer, put the Alloy model inside the `F_Models` folder and the
+configuration file inside the `F_Configurations` folder.
+For executing MobSTer, run the following command passing as argument the name of
+the Alloy model (without the `.als` extension):
+
+    python actionFramework.py WebGoat_InjectionFlaws_1
 
 
 How does MobSTer work?
