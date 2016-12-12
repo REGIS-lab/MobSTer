@@ -41,7 +41,7 @@ the Alloy model (without the `.als` extension):
 How does MobSTer work?
 ========================
 
-![MobSTer framework](https://bitbucket.org/REGIS-UniVr/mobster/raw/master/framework.png)
+![MobSTer framework](https://raw.githubusercontent.com/REGIS-lab/MobSTer/master/framework.png)
 
 The first thing that a security analyst has to do when using our framework is
 to define a formal model of the web application to test. This is done by
