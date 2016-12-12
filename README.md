@@ -18,10 +18,12 @@ missing important security checks.
 Dependencies
 ========================
 MobSTer is a Python tool that requires the following:
+```
     python2.7
     httplib2
     lxml
     requests
+```
 
 MobSTer is shipped with the Alloy Analizer which requires Java in
 order to be executed.
