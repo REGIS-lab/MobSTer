@@ -1,12 +1,14 @@
-    /$$      /$$           /$$        /$$$$$$  /$$$$$$$$                 
-    | $$$    /$$$          | $$       /$$__  $$|__  $$__/                 
-    | $$$$  /$$$$  /$$$$$$ | $$$$$$$ | $$  \__/   | $$  /$$$$$$   /$$$$$$ 
-    | $$ $$/$$ $$ /$$__  $$| $$__  $$|  $$$$$$    | $$ /$$__  $$ /$$__  $$
-    | $$  $$$| $$| $$  \ $$| $$  \ $$ \____  $$   | $$| $$$$$$$$| $$  \__/
-    | $$\  $ | $$| $$  | $$| $$  | $$ /$$  \ $$   | $$| $$_____/| $$      
-    | $$ \/  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$/   | $$|  $$$$$$$| $$      
-    |__/     |__/ \______/ |_______/  \______/    |__/ \_______/|__/      
-                                                                      
+```
+/$$      /$$           /$$        /$$$$$$  /$$$$$$$$                 
+| $$$    /$$$          | $$       /$$__  $$|__  $$__/                 
+| $$$$  /$$$$  /$$$$$$ | $$$$$$$ | $$  \__/   | $$  /$$$$$$   /$$$$$$ 
+| $$ $$/$$ $$ /$$__  $$| $$__  $$|  $$$$$$    | $$ /$$__  $$ /$$__  $$
+| $$  $$$| $$| $$  \ $$| $$  \ $$ \____  $$   | $$| $$$$$$$$| $$  \__/
+| $$\  $ | $$| $$  | $$| $$  | $$ /$$  \ $$   | $$| $$_____/| $$      
+| $$ \/  | $$|  $$$$$$/| $$$$$$$/|  $$$$$$/   | $$|  $$$$$$$| $$      
+|__/     |__/ \______/ |_______/  \______/    |__/ \_______/|__/      
+
+```
                                                                       
                                                                       
 Model-based Security Testing Framework (MobSTer) is a framework for model-based testing
@@ -19,10 +21,10 @@ Dependencies
 ========================
 MobSTer is a Python tool that requires the following:
 ```
-    python2.7
-    httplib2
-    lxml
-    requests
+python2.7
+httplib2
+lxml
+requests
 ```
 
 MobSTer is shipped with the Alloy Analizer which requires Java in
@@ -37,8 +39,10 @@ configuration file inside the `F_Configurations` folder.
 For executing MobSTer, run the following command passing as argument the name of
 the Alloy model (without the `.als` extension):
 
-    python actionFramework.py WebGoat_InjectionFlaws_1
+```
+python actionFramework.py WebGoat_InjectionFlaws_1
 
+```
 
 How does MobSTer work?
 ========================
